@@ -22,6 +22,7 @@
 
     <!-- ADD COURSE FORM -->
     <section class="inputs-container">
+      <span v-if="error === true" class="red">Error: You need to fill in all the data</span>
       <label for="title">Course Name</label>
       <input class="input" type="text" name="title" v-model="title" placeholder="VueJS Basico">
       <label for="number">Course Hours</label>
@@ -37,7 +38,7 @@
 
     <!-- COURSES LIST -->
     <section class="courses-container">
-      <h2>Courses List</h2>
+      <h2 v-if="courses.length > 0">Courses List</h2>
       <ul class="list-items">
         <li v-for="(course, key) in courses" v-bind:key="key">
           ▪️ {{ course.title }} => {{ course.time }}
@@ -46,7 +47,7 @@
     </section>
 
     <footer class="footer">
-      <p class="footer-title">Platzi Students</p>
+      <p class="footer-title">Platzi Students <span>Community.💚</span></p>
       <ul class="footer-list-items">
         <li v-for="(student, key) in students" v-bind:key="key">
           🔥 {{ student }}

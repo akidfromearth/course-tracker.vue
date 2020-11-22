@@ -178,8 +178,11 @@ h6 {
 .footer-title {
   text-align: center;
   color: #fafafa;
-  text-transform: uppercase;
   padding: 10px;
+}
+
+.footer-title > span {
+  font-weight: 300;
 }
 
 .footer-list-items {

@@ -12,10 +12,13 @@ new Vue({
       students: ["Wandy Santana", "Megan Herrera", "Zeus Amenadiel"],
       time: "",
       title: "",
+      error: false,
     };
   },
   methods: {
     addCourse() {
+      if (this.time === "" || this.title === "") return (this.error = true);
+      this.error = false;
       let course = { title: this.title, time: parseInt(this.time) };
       this.courses.push(course);
 
