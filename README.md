@@ -1,1 +1,3 @@
-course-tracker
+# course-tracker.vue
+
+Plati Courses Tracker
