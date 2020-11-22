@@ -22,7 +22,7 @@
 
     <!-- ADD COURSE FORM -->
     <section class="inputs-container">
-      <span v-if="error === true" class="red">Error: You need to fill in all the data</span>
+      <span v-if="error === true" class="red">Error: You need to fill all the fields</span>
       <label for="title">Course Name</label>
       <input class="input" type="text" name="title" v-model="title" placeholder="VueJS Basico">
       <label for="number">Course Hours</label>
@@ -32,7 +32,7 @@
 
     <!-- TOTAL HOURS -->
     <section class="total-hours-container">
-      <p>Total hours:</p>
+      <p>🕑 Total hours:</p>
       <p v-bind:style="{color: '#' + color}">{{ totalTime }}</p>
     </section>
 
