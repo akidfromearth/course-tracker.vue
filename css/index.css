@@ -151,6 +151,16 @@ h6 {
 .courses-list {
   font-weight: 300;
   font-size: 1.2rem;
+  width: 300px;
+}
+
+.courses-list__header {
+  background-color: #1c3643;
+  color: #fafafa;
+}
+.courses-list__header > th {
+  padding: 2px 8px;
+  font-weight: 300;
 }
 
 .courses-list__hours {
