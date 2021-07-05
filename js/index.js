@@ -9,7 +9,7 @@ new Vue({
       ],
       courses: [],
       color: "ff0000",
-      students: ["Wandy Santana", "Megan Herrera", "Zeus Amenadiel"],
+      students: ["Wandy Santana", "Megan Herrera", "Zeus Amenadiel", "Johan Garzon"],
       time: "",
       title: "",
       error: false,
