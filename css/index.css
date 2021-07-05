@@ -148,18 +148,13 @@ h6 {
   margin: 10px 0px;
 }
 
-.list-items {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  width: 300px;
-  height: inherit;
-}
-
-.list-items > li {
+.courses-list {
   font-weight: 300;
   font-size: 1.2rem;
+}
+
+.courses-list__hours {
+  text-align: center;
 }
 
 .footer {

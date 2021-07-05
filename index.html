@@ -39,13 +39,20 @@
     </section>
 
     <!-- COURSES LIST -->
-    <section class="courses-container">
-      <h2 v-if="courses.length > 0">Courses List</h2>
-      <ul class="list-items">
-        <li v-for="(course, key) in courses" v-bind:key="key">
-          ▪️ {{ course.title }} => {{ course.time }}
-        </li>
-      </ul>
+    <section class="courses-container" v-if="courses.length > 0">
+      <h2>Courses List</h2>
+
+      <table class="courses-list">
+        <tr>
+          <th>Courses</th>
+          <th>Hours</th>
+        </tr>
+        <tr v-for="(course, key) in courses" v-bind:key="key">
+          <td>{{ course.title }}</td>
+          <td class="courses-list__hours">{{ course.time }}</td>
+        </tr>
+      </table>
+
     </section>
 
     <footer class="footer">
